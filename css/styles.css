@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Sawarabi+Mincho&display=swap');
+/* font-family: 'Figtree', sans-serif;
+font-family: 'Sawarabi Mincho', serif; */
+
+:root {
+  --grad :linear-gradient(90deg, rgb(179, 127, 213) 0%, rgb(86, 141, 244) 50%, rgb(7, 255, 238) 100%);
+  --green :#025a4e;
+
+}
+
+.grn-head{
+  color: var(--green);
+  font-family: 'Sawarabi Mincho', serif;
+  line-height: 0.8;
+  font-size: 7rem;
+  font-weight: bolder;
+  padding: 2%;
+}
+
+body, html {
+  text-align: center;
+  font-family: 'Figtree', sans-serif;
+  background: rgb(229,231,222);
+  background: linear-gradient(223deg, rgba(229,231,222,1) 0%, rgba(183,205,246,1) 50%, rgba(206,163,240,1) 100%);
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+h2 {
+  color: black;
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 5vh;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: rgb(31, 31, 31);
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 4vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-item {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.odd .nav-link {
+  margin-right: 0;
+  border-radius: 15px;
+  background-color: #8585854f;
+  backdrop-filter: blur(6px);
+}
+.nav-colored {
+  background-color: #60606043;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  max-width: 50%;
+}
+.navbar ul {
+  margin: auto;
+}
+
+.navbar a {
+  position: relative;
+  display: block;
+  padding: 4px 8px;
+  font-weight: bolder;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.navbar a::after {
+    position: absolute;
+    content: "";
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--green);
+    transform: scaleX(0);
+    transform-origin: bottom top;
+}
+.navbar a:hover {
+    color: #3e3e3e;
+}
+.navbar .even a:hover::after {
+  transform: scaleX(1) rotate(2deg);
+}
+.navbar a:hover::after {
+    transform: scaleX(1) rotate(-2deg) translateY(-2px);
+}
+.navbar .odd a:hover::after {
+  transform: scaleX(0) rotate(0deg);
+}
+
+
+.skill-row {
+  width: 70%;
+  padding: 2%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+
+}
+
+.top-container {
+  width: 100%;
+  height: 73.65vh;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.top-content {
+  margin: 30px 50px auto auto;
+  font-size: 1.5rem;
+  color: #2d2d2dac; 
+}
+
+.top-container .name {
+  text-align: left;
+  margin: 120px 50px 100px 120px;
+  padding: 0 0 0 4rem;
+}
+.top-container .name .pro{
+  font-size: 3rem;
+  font-family: 'Sawarabi Mincho', serif;
+  
+}
+
+.download {
+  height: 2.8em;
+  width: 9em;
+  background: transparent;
+  border: 2px solid var(--green);
+  outline: none;
+  color: var(--green);
+  font-size: 17px;
+}
+.download:hover {
+  background: var(--green);
+  color: #ffffff;
+}
+
+/* .middle-container {
+  margin: 10px 0;
+} */
+
+.intro {
+  text-align: left;
+  padding: 2% 8%;
+}
+
+.intro .pro-tagline{
+  margin: 0;
+  color: var(--green);
+  font-size: 4rem;
+  line-height: 1.05;
+  font-family: 'Sawarabi Mincho', serif;
+}
+
+/* .bottom-container {
+  background-color:  rgba(59, 59, 59, 0.401);
+  padding: 50px 0px 20px;
+  max-height: 200px;
+  
+} */
+.btm-container {
+  width: 100%;
+}
+.btm-right {
+  text-align: left;
+  padding: 5%;
+}
+.btm-right h1 {
+  color: #363636;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.btm-right p img {
+  padding-right: 2px;
+}
+
+.copyright {
+  color: #363636c2;
+  font-size: 1.1rem;
+  padding: 1% 1%  1% 0;
+}
+.contact-list {
+  text-align: left;
+  height: 35vh;
+  background-color: #d2c4e8;
+  margin: 30% 5%;
+  padding: 14% 15%;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  line-height: 2.05;
+}
+
+.line {
+  line-height: 1;
+}
+
+
+.origami-img{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+
+}
+.comp-img{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.wrapper {
+display: inline-flex;
+list-style: none;
+padding-left: 0;
+}
+.wrapper .icon {
+position: relative;
+background: #ffffff;
+border-radius: 50%;
+padding: 5px;
+margin: 10px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.linkedin:hover {
+background: #1877F2;
+color: #ffffff;
+}
+.github:hover{
+background: #333333;
+color: #ffffff;
+}
+.email:hover{
+background: #CD201F;
+color: #ffffff;
+}

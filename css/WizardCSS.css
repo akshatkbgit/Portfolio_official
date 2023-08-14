@@ -1,0 +1,110 @@
+  
+  .blk {
+    background: #252525;
+  }
+  .blue {
+    background: #C8E4B2;
+  }
+  .grn{
+    background: #9ED2BE;
+  }
+  .yel {
+    background: #7EAA92;
+  }
+  .pink {
+    background: #E9A2C8;
+  }
+  .org {
+    background: #E9C0A2;
+  }
+  .rose{
+    background: #d2c4e8 !important;
+  }
+
+  .para {
+    line-height: 2;
+
+    margin: 40px auto 60px;
+    font-size: 2.8vh;
+  }
+
+  .para-left {
+    line-height: 2;
+    width: 100%;
+    margin: 40px auto;
+    font-size: 2.5vh;
+  }
+  .para-right {
+    line-height: 2;
+    width: 100%;
+    margin: 40px auto;
+    font-size: 2.5vh;
+  }
+
+  .curv-div {
+    background-color: #d2c4e8;
+    margin: 8%;
+    font-size: 1rem;
+    padding: 2% 5% 7% 5%;
+    border-radius: 50px;
+  }
+  
+  .curv-div .title {
+    text-align: right;
+    margin-bottom: 3%;
+    margin-right: -2%;
+    color: #333333;
+    font-weight: bolder;
+    font-family: 'Sawarabi Mincho', serif;
+  }
+  
+  .curv-div-s {
+    height: 50vh;
+    background-color: #d2c4e8;
+    margin: 3% 2% 5% 2%;
+    font-size: 1rem;
+    padding: 2% 5% 7% 5%;
+    border-radius: 50px;
+    transition: box-shadow 0.8s;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .curv-div-s:hover {
+    box-shadow: inset 2px 2px 500px 200px rgba(255, 255, 255, 0.496);
+    transform: scale(1.05);
+  }
+  .curv-div-s:hover .img-l, .curv-div-s:hover .img-s{
+    transform: translateY(20px);
+  } 
+
+  .curv-div-s .title {
+    margin-right: 1%;
+    margin-top: 2%;
+    text-align: right;
+    color: #333333;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: 'Sawarabi Mincho', serif;
+  }
+  .curv-div-s .img-s {
+    margin: 2% 20% auto auto;
+    transition: transform 0.4s ease-in-out; 
+  }
+  .curv-div-s .img-l {
+    transition: transform 0.4s ease-in-out; 
+  }
+
+  .div-container {
+    width: 80%;
+    padding: 1%;
+    margin: 2% auto;
+  }
+
+  .box {
+    box-shadow: 0;
+    transition: box-shadow 0.8s;
+  }
+  .box:hover {
+    box-shadow: 5px 5px 20px 1px rgba(29, 29, 29, 0.189);
+  }
